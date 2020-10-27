@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+
 '''f = open('input.txt','r',encoding='UTF-8')
 text = f.read()
 f.close()
@@ -9,8 +14,9 @@ f = open('output.txt','w',encoding='UTF-8')
 f.write(formated_text)
 f.close()'''
 
-import pyperclip as clip
 import time
+import pyperclip as clip
+
 
 
 text = ''
@@ -24,10 +30,8 @@ while 1:
 		pre_text = text
 		text = text.replace('\n',' ')
 		text = text.replace('.','.\n')
-	
+
 		print('内容を整形しました！')
 		clip.copy(text)
-	
+
 	time.sleep(1)
-	
-	
